@@ -15,6 +15,10 @@ Install SQLAlchemy:
 
     sudo pip install sqlalchemy
 
+Install Scrapy-fake-useragent
+
+    sudo pip install scrapy-fake-useragent
+
 Create database in Mysql:
 
     CREATE DATABASE scrapy;

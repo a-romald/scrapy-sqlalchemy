@@ -96,3 +96,14 @@ ITEM_PIPELINES = {
   'catalogue.pipelines.BooksPipeline': 300,
 }
 IMAGES_STORE = 'images'
+
+
+#DOWNLOAD_DELAY=1 #1 or 2 seconds to avoid ban
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None,
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+}
+
+RANDOM_UA_TYPE = 'random' #firefox desktop, mobile
+RANDOM_UA_PER_PROXY = True
